@@ -5,7 +5,7 @@ Github repository for the Group F project for the Software Design Course in Fall
 ## *Team Development of the project*
 - Yan Aquino  
 - Sebastian Estrada
-- Emmanuel Gonzales
+- Emmanuel Gonzalez
 - Nicole Roman
 - Yariel Mercado
 - Fremiud Otero
