@@ -13,14 +13,14 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+// import { useState } from "react";
 
 // react-router-dom components
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // @mui material components
 import Card from "@mui/material/Card";
-import Switch from "@mui/material/Switch";
+// import Switch from "@mui/material/Switch";
 import Grid from "@mui/material/Grid";
 import MuiLink from "@mui/material/Link";
 
@@ -45,10 +45,10 @@ import routes from "routes";
 // Images
 // import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
-function SignInBasic() {
-  const [rememberMe, setRememberMe] = useState(false);
+function SignUpBasic() {
+  // const [rememberMe, setRememberMe] = useState(false);
 
-  const handleSetRememberMe = () => setRememberMe(!rememberMe);
+  // const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   return (
     <>
@@ -97,7 +97,7 @@ function SignInBasic() {
                 textAlign="center"
               >
                 <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-                  Sign in
+                  Sign Up
                 </MKTypography>
                 <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
                   <Grid item xs={2}>
@@ -125,37 +125,13 @@ function SignInBasic() {
                   <MKBox mb={2}>
                     <MKInput type="password" label="Password" fullWidth />
                   </MKBox>
-                  <MKBox display="flex" alignItems="center" ml={-1}>
-                    <Switch checked={rememberMe} onChange={handleSetRememberMe} />
-                    <MKTypography
-                      variant="button"
-                      fontWeight="regular"
-                      color="text"
-                      onClick={handleSetRememberMe}
-                      sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
-                    >
-                      &nbsp;&nbsp;Remember me
-                    </MKTypography>
+                  <MKBox mb={3}>
+                    <MKInput type="password" label="Confirm Password" fullWidth />
                   </MKBox>
                   <MKBox mt={4} mb={1}>
                     <MKButton variant="gradient" color="info" fullWidth>
-                      sign in
+                      sign up
                     </MKButton>
-                  </MKBox>
-                  <MKBox mt={3} mb={1} textAlign="center">
-                    <MKTypography variant="button" color="text">
-                      Don&apos;t have an account?{" "}
-                      <MKTypography
-                        component={Link}
-                        to="/authentication/sign-up/cover"
-                        variant="button"
-                        color="info"
-                        fontWeight="medium"
-                        textGradient
-                      >
-                        Sign up
-                      </MKTypography>
-                    </MKTypography>
                   </MKBox>
                 </MKBox>
               </MKBox>
@@ -170,4 +146,4 @@ function SignInBasic() {
   );
 }
 
-export default SignInBasic;
+export default SignUpBasic;

@@ -43,10 +43,11 @@ import Icon from "@mui/material/Icon";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Pages
-import AboutUs from "layouts/pages/landing-pages/about-us";
+import Subscriptions from "layouts/pages/landing-pages/subscriptions";
 import ContactUs from "layouts/pages/landing-pages/contact-us";
 import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
+import SignUp from "layouts/pages/authentication/sign-up";
 
 // Sections
 import PageHeaders from "layouts/sections/page-sections/page-headers";
@@ -79,9 +80,9 @@ const routes = [
         name: "landing pages",
         collapse: [
           {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
-            component: <AboutUs />,
+            name: "subscriptions",
+            route: "/pages/landing-pages/subscriptions",
+            component: <Subscriptions />,
           },
           {
             name: "contact us",
@@ -103,6 +104,7 @@ const routes = [
             route: "/pages/authentication/sign-in",
             component: <SignIn />,
           },
+          { name: "sign up", route: "/pages/authentication/sign-up", component: <SignUp /> },
         ],
       },
     ],

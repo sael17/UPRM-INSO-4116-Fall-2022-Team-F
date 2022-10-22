@@ -19,7 +19,6 @@ import PropTypes from "prop-types";
 // @mui material components
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
-import Icon from "@mui/material/Icon";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -29,7 +28,7 @@ import MKTypography from "components/MKTypography";
 import typography from "assets/theme/base/typography";
 
 function SimpleFooter({ company, links, light }) {
-  const { href, name } = company;
+  const { href } = company;
   const { size } = typography;
 
   const renderLinks = () =>
@@ -66,19 +65,13 @@ function SimpleFooter({ company, links, light }) {
           color={light ? "white" : "text"}
           fontSize={size.sm}
         >
-          &copy; {new Date().getFullYear()}, made with
-          <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
-            <Icon color="inherit" fontSize="inherit">
-              favorite
-            </Icon>
-          </MKBox>
-          by
+          &copy; {new Date().getFullYear()}, made by
           <Link href={href} target="_blank">
             <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-              &nbsp;{name}&nbsp;
+              &nbsp;Team F&nbsp;
             </MKTypography>
           </Link>
-          for a better web.
+          for Design Class
         </MKBox>
         <MKBox
           component="ul"
@@ -106,9 +99,9 @@ function SimpleFooter({ company, links, light }) {
 
 // Setting default values for the props of SimpleFooter
 SimpleFooter.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+  company: { href: "https://www.creative-tim.com/", name: "Team F" },
   links: [
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
+    { href: "https://www.creative-tim.com/", name: "Team F" },
     { href: "https://www.creative-tim.com/presentation", name: "About Us" },
     { href: "https://www.creative-tim.com/blog", name: "Blog" },
     { href: "https://www.creative-tim.com/license", name: "License" },

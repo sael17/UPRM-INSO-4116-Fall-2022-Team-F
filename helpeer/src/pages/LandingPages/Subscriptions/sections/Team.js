@@ -53,8 +53,7 @@ function Team() {
               Your Subscriptions
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+              Renew or cancel these subscriptions based of the provided information.
             </MKTypography>
           </Grid>
         </Grid>

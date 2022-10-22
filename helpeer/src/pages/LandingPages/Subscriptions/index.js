@@ -29,7 +29,7 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 
 // About Us page sections
 // import Information from "pages/LandingPages/AboutUs/sections/Information";
-import Team from "pages/LandingPages/AboutUs/sections/Team";
+import Team from "pages/LandingPages/Subscriptions/sections/Team";
 // import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
 // import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
 
@@ -40,7 +40,7 @@ import footerRoutes from "footer.routes";
 // Images
 // import bgImage from "assets/images/bg-about-us.jpg";
 
-function AboutUs() {
+function Subscriptions() {
   return (
     <>
       <MKBox variant="gradient" bgColor="dark" shadow="sm" py={0.25}>
@@ -146,4 +146,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Subscriptions;
