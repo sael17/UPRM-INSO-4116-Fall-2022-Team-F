@@ -50,55 +50,30 @@ function Team() {
         <Grid container>
           <Grid item xs={12} md={8} sx={{ mb: 6 }}>
             <MKTypography variant="h3" color="white">
-              Your Active Subscriptions
+              Your Inactive Subscriptions
             </MKTypography>
             <MKTypography variant="body2" color="white" opacity={0.8}>
-              Renew or cancel these subscriptions based of the provided information.
+              Renew these canceled subscriptions based of the provided information.
             </MKTypography>
           </Grid>
         </Grid>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
-              {/* <RotatingCard>
-                <RotatingCardFront
-                  color="dark"
-                  image="https://bit.ly/3G5JXJZ"
-                  icon={
-                    <>
-                      <img src="https://logo.clearbit.com/spotify.com" alt="My Thing" />
-                    </>
-                  }
-                  title={<>Spotify</>}
-                  description={
-                    <>
-                      <MKButton>Renew</MKButton>
-                      <MKButton>Cancel</MKButton>
-                    </>
-                  }
-                />
-                <RotatingCardBack
-                  image="https://bit.ly/32ZoTGx"
-                  title="Discover More"
-                  description={<MKButton>Renew</MKButton>}
-                  action={{ type: "internal", route: "/", label: "Cancel" }}
-                />
-              </RotatingCard> */}
               <HorizontalTeamCard
-                image="https://logo.clearbit.com/spotify.com"
-                name="Spotify"
+                image="https://logo.clearbit.com/appletv.com"
+                name="Apple TV"
                 position={{
                   color: "info",
                   label: (
                     <>
-                      Price: <br /> Renewal Date:{" "}
+                      Price: <br /> Cancel Date:{" "}
                     </>
                   ),
                 }}
                 description={
                   <>
                     <MKButton color="success">Renew</MKButton>
-                    <MKButton color="error">Cancel</MKButton>
                   </>
                 }
               />
@@ -107,20 +82,19 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={1}>
               <HorizontalTeamCard
-                image="https://logo.clearbit.com/hulu.com"
-                name="Hulu"
+                image="https://logo.clearbit.com/amazon.com"
+                name="Amazon"
                 position={{
                   color: "info",
                   label: (
                     <>
-                      Price: <br /> Renewal Date:{" "}
+                      Price: <br /> Cancel Date:{" "}
                     </>
                   ),
                 }}
                 description={
                   <>
                     <MKButton color="success">Renew</MKButton>
-                    <MKButton color="error">Cancel</MKButton>
                   </>
                 }
               />
@@ -129,20 +103,19 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://logo.clearbit.com/disney.com"
-                name="Disney+"
+                image="https://logo.clearbit.com/showtime.com"
+                name="Showtime"
                 position={{
                   color: "info",
                   label: (
                     <>
-                      Price: <br /> Renewal Date:{" "}
+                      Price: <br /> Cancel Date:{" "}
                     </>
                   ),
                 }}
                 description={
                   <>
                     <MKButton color="success">Renew</MKButton>
-                    <MKButton color="error">Cancel</MKButton>
                   </>
                 }
               />
@@ -151,20 +124,19 @@ function Team() {
           <Grid item xs={12} lg={6}>
             <MKBox mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image="https://logo.clearbit.com/hbomax.com"
-                name="HBO Max"
+                image="https://logo.clearbit.com/pandora.com"
+                name="Pandora"
                 position={{
                   color: "info",
                   label: (
                     <>
-                      Price: <br /> Renewal Date:{" "}
+                      Price: <br /> Cancel Date:{" "}
                     </>
                   ),
                 }}
                 description={
                   <>
                     <MKButton color="success">Renew</MKButton>
-                    <MKButton color="error">Cancel</MKButton>
                   </>
                 }
               />
