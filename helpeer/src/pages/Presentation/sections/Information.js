@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Track
                     <br />
-                    Material Kit
+                    Subscriptions
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="For the most common platforms of streaming, music, etc."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="You will save a lot of time in tracking your platforms."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/pages/landing-pages/subscriptions",
+                  label: "Active Subscriptions",
                 }}
               />
             </RotatingCard>
@@ -66,16 +66,16 @@ function Information() {
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  title="Full Coverage"
+                  description="Built by users for users. Check the website and you will find
+                    everything inside."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
                   icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  title="Different Platforms"
+                  description="The world's most popular platforms are included in our tracking functionality."
                 />
               </Grid>
             </Grid>
@@ -84,7 +84,7 @@ function Information() {
                 <DefaultInfoCard
                   icon="price_change"
                   title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  description="Save money spend on unused subscriptions and time tracking them."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
