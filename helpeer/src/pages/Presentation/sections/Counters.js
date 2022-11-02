@@ -41,7 +41,7 @@ function Counters() {
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
               count={30}
-              suffix="-"
+              prefix="-"
               title="Seconds"
               description="To cancel or renew subscriptions."
             />
